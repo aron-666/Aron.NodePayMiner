@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Aron.NodePayMiner": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "NP_TOKEN": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjM5ODA5MjQzOTYwMzExODA4IiwiaWF0IjoxNzMxNzgxMjIxLCJleHAiOjE3MzI5OTA4MjF9._N7vxRsqjCmmqI9o1RokH9tgM_CjB8IfzKZo_BozPitmZ-RjDqqKJzUqpgRxjRG_zc0DNhniG7BJykpoRtf1aw",
+        "ADMIN_USER": "admin",
+        "ADMIN_PASS": "admin",
+        "LOG_ENABLE": "true"
+      },
+      "applicationUrl": "http://localhost:50915"
+    }
+  }
+}

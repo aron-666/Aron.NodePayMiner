@@ -1,0 +1,14 @@
+version: '1'
+services:
+  grassminer:
+    image: aron666/aron.grassminer
+    container_name: grassminer
+    environment:
+      - GRASS_USER=user
+      - GRASS_PASS=password
+      - IS_COMMUNITY=false
+      - ADMIN_USER=admin
+      - ADMIN_PASS=admin
+    ports:
+      - 5001:8080
+    restart: always

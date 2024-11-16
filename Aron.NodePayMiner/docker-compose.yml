@@ -1,0 +1,14 @@
+version: '1'
+services:
+  nodepay:
+    image: aron666/nodepay
+    container_name: nodepay
+    environment:
+      - NP_TOKEN=token
+      - ADMIN_USER=admin
+      - ADMIN_PASS=admin
+    ports:
+      - 5002:8080
+    build: 
+      context: .
+      dockerfile: Dockerfile

@@ -347,3 +347,10 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+*.tar
+Aron.GrassMiner/db/
+
+
+Aron.GrassMiner/Properties/launchSettings.json
+
+Aron.GrassMiner.WinControl/app/
