@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace GrassMiner.Migrations
+namespace Aron.NodePayMiner.Migrations
 {
     /// <inheritdoc />
     public partial class Identity : Migration

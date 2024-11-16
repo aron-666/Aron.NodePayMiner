@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GrassMiner.Migrations
+namespace Aron.NodePayMiner.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240316035837_Identity")]
