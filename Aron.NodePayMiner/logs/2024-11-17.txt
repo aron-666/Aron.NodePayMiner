@@ -7085,3 +7085,220 @@ WHERE "a"."UserId" = @__user_Id_0
 2024-11-17 06:20:54.7392 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 9.5314ms
 2024-11-17 06:20:54.7392 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
 2024-11-17 06:20:54.7392 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 64295 application/json;+charset=utf-8 12.1484ms
+2024-11-17 06:49:02.3392 INFO User profile is available. Using 'C:\Users\Aron\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-17 06:49:02.4516 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2024-11-17 06:49:02.4516 INFO Quartz Scheduler created
+2024-11-17 06:49:02.4516 INFO JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2024-11-17 06:49:02.4516 INFO RAMJobStore initialized.
+2024-11-17 06:49:02.4516 INFO Quartz Scheduler 3.8.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2024-11-17 06:49:02.4516 INFO Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2024-11-17 06:49:02.4516 INFO Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2024-11-17 06:49:02.4639 INFO Adding 3 jobs, 3 triggers.
+2024-11-17 06:49:02.4639 INFO Adding job: DEFAULT.UpdateIpJob
+2024-11-17 06:49:02.4740 INFO Adding job: DEFAULT.ScreensShotJob
+2024-11-17 06:49:02.4740 INFO Adding job: DEFAULT.ExitJob
+2024-11-17 06:49:02.5625 INFO Now listening on: http://localhost:50915
+2024-11-17 06:49:02.5773 INFO Application started. Press Ctrl+C to shut down.
+2024-11-17 06:49:02.5773 INFO Hosting environment: Development
+2024-11-17 06:49:02.5773 INFO Content root path: C:\Users\Aron\Desktop\Project\挖礦\NodePay\Aron.NodePayMiner\Aron.NodePayMiner
+2024-11-17 06:49:02.5773 INFO Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2024-11-17 06:49:03.9072 INFO Request starting HTTP/1.1 GET http://localhost:50915/ - - -
+2024-11-17 06:49:04.0238 INFO Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2024-11-17 06:49:04.0576 INFO Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2024-11-17 06:49:04.0753 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:04.0753 INFO Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Aron.NodePayMiner.Controllers.HomeController (Aron.NodePayMiner).
+2024-11-17 06:49:04.0844 INFO Executing RedirectResult, redirecting to /Miner.
+2024-11-17 06:49:04.0844 INFO Executed action Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner) in 4.4959ms
+2024-11-17 06:49:04.0844 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:04.0844 INFO Request finished HTTP/1.1 GET http://localhost:50915/ - 302 0 - 192.6095ms
+2024-11-17 06:49:04.0844 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner - - -
+2024-11-17 06:49:04.1017 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:04.1017 INFO Route matched with {action = "Index", controller = "Miner", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:04.1017 INFO Executing ViewResult, running view Index.
+2024-11-17 06:49:04.1674 INFO Executed ViewResult - view Index executed in 63.2197ms.
+2024-11-17 06:49:04.1674 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner) in 64.931ms
+2024-11-17 06:49:04.1674 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:04.1674 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner - 200 - text/html;+charset=utf-8 73.8205ms
+2024-11-17 06:49:04.1937 INFO Request starting HTTP/1.1 GET http://localhost:50915/Aron.NodePayMiner.styles.css?v=PmZ2JNgVxa4Mz_6ZncJTjGwXWjnhmSmcI6NUWNqfZzk - - -
+2024-11-17 06:49:04.1937 INFO Request starting HTTP/1.1 GET http://localhost:50915/_framework/aspnetcore-browser-refresh.js - - -
+2024-11-17 06:49:04.1937 INFO Request finished HTTP/1.1 GET http://localhost:50915/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript;+charset=utf-8 2.4258ms
+2024-11-17 06:49:04.1937 INFO The file /Aron.NodePayMiner.styles.css was not modified
+2024-11-17 06:49:04.1937 INFO Request finished HTTP/1.1 GET http://localhost:50915/Aron.NodePayMiner.styles.css?v=PmZ2JNgVxa4Mz_6ZncJTjGwXWjnhmSmcI6NUWNqfZzk - 304 - text/css 11.7022ms
+2024-11-17 06:49:04.7061 INFO Request starting HTTP/1.1 GET http://localhost:50915/_vs/browserLink - - -
+2024-11-17 06:49:04.7266 INFO Request finished HTTP/1.1 GET http://localhost:50915/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.5252ms
+2024-11-17 06:49:05.7257 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:05.7257 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:05.7257 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:05.7257 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:05.7738 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 43.9666ms
+2024-11-17 06:49:05.7738 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:05.7738 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 192 application/json;+charset=utf-8 49.1104ms
+2024-11-17 06:49:06.7262 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:06.7262 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:06.7262 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:06.7262 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:06.7262 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 1.3367ms
+2024-11-17 06:49:06.7262 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:06.7262 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 192 application/json;+charset=utf-8 6.1907ms
+2024-11-17 06:49:07.7298 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:07.7298 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:07.7298 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:07.7298 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:07.7298 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 0.9996ms
+2024-11-17 06:49:07.7298 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:07.7298 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 192 application/json;+charset=utf-8 4.0642ms
+2024-11-17 06:49:10.0022 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:10.0022 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:10.0022 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:10.0044 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:10.0044 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 10.3813ms
+2024-11-17 06:49:10.0044 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:10.0044 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 14.5098ms
+2024-11-17 06:49:10.9924 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:10.9924 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:10.9924 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:10.9924 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:10.9924 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.3904ms
+2024-11-17 06:49:10.9924 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:10.9924 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 9.5866ms
+2024-11-17 06:49:11.9975 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:11.9975 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:11.9975 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:11.9975 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:12.0068 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 7.3483ms
+2024-11-17 06:49:12.0068 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:12.0068 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 9.9910ms
+2024-11-17 06:49:13.0073 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:13.0073 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:13.0073 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:13.0073 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:13.0073 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.2807ms
+2024-11-17 06:49:13.0073 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:13.0073 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 8.6496ms
+2024-11-17 06:49:13.9949 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:13.9949 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:13.9949 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:13.9949 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:13.9949 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.3096ms
+2024-11-17 06:49:13.9949 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:13.9949 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 9.2201ms
+2024-11-17 06:49:15.0008 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:15.0008 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:15.0008 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:15.0008 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:15.0083 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 5.9436ms
+2024-11-17 06:49:15.0083 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:15.0083 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 42763 application/json;+charset=utf-8 8.2394ms
+2024-11-17 06:49:48.9190 INFO User profile is available. Using 'C:\Users\Aron\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-17 06:49:49.0104 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2024-11-17 06:49:49.0104 INFO Quartz Scheduler created
+2024-11-17 06:49:49.0104 INFO JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2024-11-17 06:49:49.0104 INFO RAMJobStore initialized.
+2024-11-17 06:49:49.0104 INFO Quartz Scheduler 3.8.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2024-11-17 06:49:49.0104 INFO Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2024-11-17 06:49:49.0104 INFO Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2024-11-17 06:49:49.0250 INFO Adding 3 jobs, 3 triggers.
+2024-11-17 06:49:49.0250 INFO Adding job: DEFAULT.UpdateIpJob
+2024-11-17 06:49:49.0250 INFO Adding job: DEFAULT.ScreensShotJob
+2024-11-17 06:49:49.0250 INFO Adding job: DEFAULT.ExitJob
+2024-11-17 06:49:49.1237 INFO Now listening on: http://localhost:50915
+2024-11-17 06:49:49.1383 INFO Application started. Press Ctrl+C to shut down.
+2024-11-17 06:49:49.1383 INFO Hosting environment: Development
+2024-11-17 06:49:49.1383 INFO Content root path: C:\Users\Aron\Desktop\Project\挖礦\NodePay\Aron.NodePayMiner\Aron.NodePayMiner
+2024-11-17 06:49:49.1383 INFO Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2024-11-17 06:49:51.6979 INFO Request starting HTTP/1.1 GET http://localhost:50915/ - - -
+2024-11-17 06:49:51.7555 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:51.7555 INFO Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Aron.NodePayMiner.Controllers.HomeController (Aron.NodePayMiner).
+2024-11-17 06:49:51.7555 INFO Executing RedirectResult, redirecting to /Miner.
+2024-11-17 06:49:51.7555 INFO Executed action Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner) in 4.4033ms
+2024-11-17 06:49:51.7702 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.HomeController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:51.7702 INFO Request finished HTTP/1.1 GET http://localhost:50915/ - 302 0 - 78.4659ms
+2024-11-17 06:49:51.7702 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner - - -
+2024-11-17 06:49:51.7702 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:51.7863 INFO Route matched with {action = "Index", controller = "Miner", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:51.7863 INFO Executing ViewResult, running view Index.
+2024-11-17 06:49:51.8399 INFO Executed ViewResult - view Index executed in 51.7953ms.
+2024-11-17 06:49:51.8399 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner) in 53.7224ms
+2024-11-17 06:49:51.8399 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.Index (Aron.NodePayMiner)'
+2024-11-17 06:49:51.8399 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner - 200 - text/html;+charset=utf-8 65.9892ms
+2024-11-17 06:49:51.8752 INFO Request starting HTTP/1.1 GET http://localhost:50915/_framework/aspnetcore-browser-refresh.js - - -
+2024-11-17 06:49:51.8752 INFO Request finished HTTP/1.1 GET http://localhost:50915/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript;+charset=utf-8 3.1122ms
+2024-11-17 06:49:52.4175 INFO Request starting HTTP/1.1 GET http://localhost:50915/_vs/browserLink - - -
+2024-11-17 06:49:52.4339 INFO Request finished HTTP/1.1 GET http://localhost:50915/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 16.3620ms
+2024-11-17 06:49:53.4435 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:53.4435 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:53.4435 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:53.4435 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:53.4878 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 35.0213ms
+2024-11-17 06:49:53.4878 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:53.4894 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 192 application/json;+charset=utf-8 45.8846ms
+2024-11-17 06:49:54.4481 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:54.4481 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:54.4481 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:54.4481 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:54.4481 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 0.9994ms
+2024-11-17 06:49:54.4481 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:54.4481 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 192 application/json;+charset=utf-8 4.1460ms
+2024-11-17 06:49:55.4379 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:55.4379 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:55.4379 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:55.4379 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:55.4512 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 11.0463ms
+2024-11-17 06:49:55.4512 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:55.4512 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45819 application/json;+charset=utf-8 15.8366ms
+2024-11-17 06:49:56.4520 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:56.4520 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:56.4520 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:56.4520 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:56.4606 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.3321ms
+2024-11-17 06:49:56.4606 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:56.4606 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45819 application/json;+charset=utf-8 9.6582ms
+2024-11-17 06:49:57.4417 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:57.4429 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:57.4429 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:57.4429 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:57.4429 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.9892ms
+2024-11-17 06:49:57.4429 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:57.4429 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45819 application/json;+charset=utf-8 10.2687ms
+2024-11-17 06:49:58.4483 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:58.4483 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:58.4483 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:58.4483 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:58.4483 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.0104ms
+2024-11-17 06:49:58.4576 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:58.4576 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45819 application/json;+charset=utf-8 9.8831ms
+2024-11-17 06:49:59.4403 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:49:59.4403 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:59.4419 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:49:59.4419 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:49:59.4419 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 7.2784ms
+2024-11-17 06:49:59.4419 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:49:59.4419 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45819 application/json;+charset=utf-8 10.3374ms
+2024-11-17 06:50:00.4430 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:50:00.4430 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:00.4430 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:50:00.4430 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:50:00.4430 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.3884ms
+2024-11-17 06:50:00.4430 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:00.4430 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45807 application/json;+charset=utf-8 9.4352ms
+2024-11-17 06:50:01.4477 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:50:01.4477 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:01.4477 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:50:01.4477 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:50:01.4477 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 6.8153ms
+2024-11-17 06:50:01.4477 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:01.4477 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45807 application/json;+charset=utf-8 9.3926ms
+2024-11-17 06:50:02.4514 INFO Request starting HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - - -
+2024-11-17 06:50:02.4514 INFO Executing endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:02.4514 INFO Route matched with {action = "GetMinerRecord", controller = "Miner", page = "", area = ""}. Executing controller action with signature Aron.NodePayMiner.Models.MinerRecord GetMinerRecord() on controller Aron.NodePayMiner.Controllers.MinerController (Aron.NodePayMiner).
+2024-11-17 06:50:02.4514 INFO Executing ObjectResult, writing value of type 'Aron.NodePayMiner.Models.MinerRecord'.
+2024-11-17 06:50:02.4599 INFO Executed action Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner) in 5.99ms
+2024-11-17 06:50:02.4599 INFO Executed endpoint 'Aron.NodePayMiner.Controllers.MinerController.GetMinerRecord (Aron.NodePayMiner)'
+2024-11-17 06:50:02.4599 INFO Request finished HTTP/1.1 GET http://localhost:50915/Miner/GetMinerRecord - 200 45807 application/json;+charset=utf-8 9.2574ms
