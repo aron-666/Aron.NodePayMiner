@@ -12,15 +12,11 @@ RUN dotnet publish "Aron.NodePayMiner.csproj" -c $BUILD_CONFIGURATION -o /app/pu
 FROM debian:bullseye-20240722-slim AS final
 EXPOSE 50003/tcp
 ENV ASPNETCORE_HTTP_PORTS 50003
-ENV ASPNETCORE_URLS http://0.0.0.0:$ASPNETCORE_HTTP_PORTS
 WORKDIR /app
 
 RUN apt-get update -y
 RUN apt-get install -y wget
 
-#RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O browser.deb
-#RUN apt-get install -y ./browser.deb
-#RUN rm browser.deb
 
 RUN apt-get install -y --no-install-recommends \
     curl \

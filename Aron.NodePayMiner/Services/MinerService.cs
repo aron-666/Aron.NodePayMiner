@@ -16,6 +16,8 @@ namespace Aron.NodePayMiner.Services
         public ChromeDriver driver { get; set; }
         private readonly AppConfig _appConfig;
         private readonly MinerRecord _minerRecord;
+        private readonly string extensionPath = "./Nodepay.crx";
+        private readonly string extensionId = "lgmpfmgeabnnlemejacfljbmonaomfmm";
         private bool Enabled { get; set; } = true;
 
         private Thread? thread;
@@ -103,7 +105,6 @@ namespace Aron.NodePayMiner.Services
                 string npToken = _appConfig.NpToken;
 
                 // 設定 Chrome 擴充功能路徑
-                string extensionPath = "./Nodepay.crx";
                 string chromedriverPath = "./chromedriver";
 
                 // 建立 Chrome 選項
@@ -208,7 +209,7 @@ namespace Aron.NodePayMiner.Services
                 }
 
 
-                driver.Navigate().GoToUrl("chrome-extension://lgmpfmgeabnnlemejacfljbmonaomfmm/index.html");
+                driver.Navigate().GoToUrl($"chrome-extension://{extensionId}/index.html");
                 Console.WriteLine("Go to extension: " + driver.Url);
 
                 driver.Manage().Window.Size = new Size(1024, 768);
@@ -269,7 +270,7 @@ namespace Aron.NodePayMiner.Services
                         {
                             BeforeRefresh = DateTime.Now;
                             //refresh
-                            driver.Navigate().GoToUrl("chrome-extension://lgmpfmgeabnnlemejacfljbmonaomfmm/index.html");
+                            driver.Navigate().GoToUrl($"chrome-extension://{extensionId}/index.html");
                             SpinWait.SpinUntil(() => !Enabled, 15000);
                         }
                         await Task.Delay(5000);
