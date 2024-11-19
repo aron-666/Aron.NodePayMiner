@@ -1,30 +1,22 @@
-![Total Visitors](https://komarev.com/ghpvc/?username=aron-666miner&color=green)
+![Total Visitors](https://komarev.com/ghpvc/?username=aron-666NodePayMiner&color=green)
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/aron-666/Aron.GrassMiner/blob/master/README.en.md)
-[![中文](https://img.shields.io/badge/lang-中文-blue.svg)](https://github.com/aron-666/Aron.GrassMiner)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/aron-666/Aron.NodePayMiner/blob/master/README.en.md)
+[![中文](https://img.shields.io/badge/lang-中文-blue.svg)](https://github.com/aron-666/Aron.NodePayMiner)
 
-# Aron.GrassMiner
+# Aron.NodePayMiner
 Written in .Net 8
 
-## If you find it useful, support me by using my referral code: RI3NGc63lVmUQix
-[Register Now at app.getgrass.io](https://app.getgrass.io/register/?referralCode=RI3NGc63lVmUQix)
+## If you find it useful, support me by using my referral code: NwWtzg6qBuzUzXD
+[Register Now at app.nodepay.ai](https://app.nodepay.ai/register?ref=NwWtzg6qBuzUzXD)
 
-Currently, Grass is priced off-exchange at 1:0.0036USDT.
 
-Mining at full capacity for a day yields 1800 tokens, equivalent to 6.48USDT per day.
-
-Grass mining doesn't require specialized hardware but consumes minimal bandwidth (10-30KB/s) for mining.
-
-In the future, when it's listed on exchanges, points can be directly converted into cryptocurrencies.
-
-Others' Introduction: [Binance Article](https://www.binance.com/zh-TC/feed/post/1783966376178)
 
 ## Execution Screenshots
 1. Login
-![image](https://github.com/aron-666/Aron.GrassMiner/blob/master/%E6%88%AA%E5%9C%96/%E5%BE%8C%E8%87%BA%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png?raw=true)
+![image](https://github.com/aron-666/Aron.NodePayMiner/blob/master/%E6%88%AA%E5%9C%96/%E5%BE%8C%E8%87%BA%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png?raw=true)
 
 2. Mining Information
-![image](https://github.com/aron-666/Aron.GrassMiner/blob/master/%E6%88%AA%E5%9C%96/%E6%8C%96%E7%A4%A6%E7%95%AB%E9%9D%A2.png?raw=true)
+![image](https://github.com/aron-666/Aron.NodePayMiner/blob/master/%E6%88%AA%E5%9C%96/%E6%8C%96%E7%A4%A6%E7%95%AB%E9%9D%A2.png?raw=true)
 
 ## 1. Docker Installation
 1. Install Docker
@@ -33,18 +25,24 @@ Others' Introduction: [Binance Article](https://www.binance.com/zh-TC/feed/post/
 
 2. Edit docker-compose.yml (In the docker-install folder of the source code)
    ```
-   GRASS_USER=Your Grass account
-   GRASS_PASS=Your Grass password
-   IS_COMMUNITY=false (To use community node, change to true)  
-   ADMIN_USER=Backend management account (customizable)
-   ADMIN_PASS=Backend management password (customizable)
-   PROXY_ENABLE=true / false
-   PROXY_HOST=http(s)://host:port
-   PROXY_USER=user
-   PROXY_PASS=pass
+   version: '1'
+   services:
+      nodepay:
+         image: aron666/nodepay
+         container_name: nodepay
+         environment:
+            - NP_TOKEN=token
+            - ADMIN_USER=admin
+            - ADMIN_PASS=admin
+            - PROXY_ENABLE=true # false
+            - PROXY_HOST=http(s)://host:port
+            - PROXY_USER=user
+            - PROXY_PASS=pass
+         ports:
+            - 5003:50003
    ```
 
-   - Port 5001 will open a port on your computer. Open firewall port 5001 for LAN access.
+   - Port 5003 will open a port on your computer. Open firewall port 5003 for LAN access.
 
 3. Execute
    ```
@@ -55,8 +53,8 @@ Others' Introduction: [Binance Article](https://www.binance.com/zh-TC/feed/post/
    ```
    Then, you can check the backend status using the following URLs:
 
-   - Local: [http://localhost:5001](http://localhost:5001)
-   - Other devices: Open cmd and type `ipconfig`/`ifconfig` to find your LAN IP, then access [http://IP:5001](http://IP:5001)
+   - Local: [http://localhost:5003](http://localhost:5003)
+   - Other devices: Open cmd and type `ipconfig`/`ifconfig` to find your LAN IP, then access [http://IP:5003](http://IP:5003)
      - The process continues even if the webpage is closed.
      - For Windows auto-start, adjust settings in Docker Desktop.
 
