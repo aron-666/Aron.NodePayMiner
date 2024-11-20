@@ -35,7 +35,7 @@
             - NP_TOKEN=token
             - ADMIN_USER=admin
             - ADMIN_PASS=admin
-            - PROXY_ENABLE=true # false
+            - PROXY_ENABLE=false # true
             - PROXY_HOST=http(s)://host:port
             - PROXY_USER=user
             - PROXY_PASS=pass
