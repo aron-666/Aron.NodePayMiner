@@ -58,19 +58,17 @@ Written in .Net 8
      - The process continues even if the webpage is closed.
      - For Windows auto-start, adjust settings in Docker Desktop.
 
-## 2. Service Installation
-1. Windows: Coming Soon
-2. Linux: Coming Soon
 
-## Update Log
-2024-03-18: Added UI information, fixed login functionality, UI beautification (I'm terrible at frontend).
+# Support the Project
 
-2024-03-18: Added version update notification, Proxy settings.
+If you find this automated mining bot helpful and would like to support my ongoing development, feel free to:
 
-2024-04-11: Added Proxy auth.
+☕ **Buy me a coffee!** ☕
 
-2024-05-04: Upgrade extension
+Your support is like a freshly brewed cup of coffee that keeps me energized to keep coding!
 
-2024-06-25: Update community node (environment variables must be set)
+### Donation Addresses
+- **BEP20 (USDT/BNB, etc.):** `0xd14ee77edb0a052eb955db6fcd2a1cdcafeef53e`
+- **TRC20 (USDT, etc.):** `THrEH2tKHxCUiSiuFpGhU99Y4QdChW8dub`
 
-2024-07-24: Update Community Node / Fix Login Slowness Issue / Modify UI
+Thank you for your generosity! 🙌
